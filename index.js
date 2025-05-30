@@ -41,3 +41,11 @@ window.addEventListener("scroll", () => {
     alterStyles(isBackToTopRendered);
   }
 });
+
+const resumeButton = document.getElementById("resume-btn");
+resumeButton.addEventListener("click", () => {
+  console.log("Resume button clicked");
+  window.open(
+    "https://drive.google.com/file/d/1B1GHL80VWeZ3guQGqubI6GCLRJEo-cPU/view?usp=drive_link"
+  );
+});
