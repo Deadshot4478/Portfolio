@@ -46,7 +46,7 @@
     background-image: conic-gradient(from var(--angle),red, yellow, green,rgb(31, 6, 255), rgb(198, 5, 137),rgb(232, 220, 220),rgb(255, 79, 108), purple, red);
     z-index: -1;
     border-radius: 1rem;
-    animation: 3s spin linear infinite;
+    animation: 3s spin-anti-clockwise linear infinite;
 }
 
 #resume-btn-container::after {
@@ -103,6 +103,15 @@
 
     to{
         --angle : 360deg;
+    }
+}
+@keyframes spin-anti-clockwise{
+    from{
+        --angle : 360deg;
+    }
+
+    to{
+        --angle : 0deg;
     }
 }
 
