@@ -28,6 +28,38 @@
     initial-value: 0deg;
 }
 
+#resume-btn-container {
+    
+   position: relative;
+   height: auto;
+ width: 17.4rem;
+ background: #000;
+}
+
+
+#resume-btn-container::after, #resume-btn-container::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width:100%;
+    translate:-50% ;
+    background-image: conic-gradient(from var(--angle),red, yellow, green,rgb(31, 6, 255), rgb(198, 5, 137),rgb(232, 220, 220),rgb(255, 79, 108), purple, red);
+    z-index: -1;
+    border-radius: 1rem;
+    animation: 3s spin linear infinite;
+}
+
+#resume-btn-container::after {
+    display: none;
+    filter: blur(1.5rem);
+    translate: 100% 100%;
+}
+#resume-btn-container::before {
+
+    filter: blur(1.5rem);
+    translate: 0%;
+}
+
 #name {
     
     position: relative;
