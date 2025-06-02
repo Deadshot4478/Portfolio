@@ -68,43 +68,6 @@
     
 }
 
-#name {
-    
-    position: relative;
-    background-image: url(./images/header.jpg);
-    background-size: cover;
-    border-radius: 1rem;
-    padding: 1rem;
-    
-    
-}
-#name::after, #name::before{
-    content: '';
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background-image: conic-gradient(from var(--angle),transparent 10%, white);
-    
-    z-index: -1;
-    border-radius: 1rem;
-    animation: 2s spin linear infinite;
-    margin-bottom: 1rem;
-    
-}
-#name::after {
-    display: none;
-    filter: blur(1rem);
-
-
-    translate: 100% 100%;
-}
-#name::before {
-    filter: blur(15px);
-    opacity: 0.5;
-    translate: -5% -10%;
-    padding: 5px;
-    
-}
 
 @keyframes spin{
     from{
