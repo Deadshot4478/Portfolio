@@ -85,14 +85,16 @@
 }
 #name::after {
     display: none;
-    filter: blur(1.5rem);
+    filter: blur(1rem);
+
 
     translate: 100% 100%;
 }
 #name::before {
-    filter: blur(10px);
+    filter: blur(15px);
     opacity: 0.5;
-    translate: -2% -10%;
+    translate: -5% -10%;
+    padding: 5px;
     
 }
 
